@@ -714,13 +714,6 @@ export default function App() {
             
             {/* Floating decorative elements */}
             <motion.div 
-              animate={{ y: [0, -15, 0], rotate: [0, 5, 0] }}
-              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute -top-6 -left-2 md:-left-6 bg-white p-3 rounded-2xl shadow-xl border border-brand-orange/20 clay-card z-20"
-            >
-              <span className="text-2xl md:text-3xl">🌴</span>
-            </motion.div>
-            <motion.div 
               animate={{ y: [0, 20, 0], rotate: [0, -10, 0] }}
               transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
               className="absolute -bottom-4 -right-2 md:-right-4 bg-white p-4 rounded-2xl shadow-xl border border-brand-orange/20 clay-card z-20"
