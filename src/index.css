@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600&family=Dancing+Script:wght@600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Inter", sans-serif;
+  --font-cursive: "Dancing Script", cursive;
+  --color-brand-yellow: #FDCB44;
+  --color-brand-cream: #FFF9E6;
+  --color-brand-beige: #F4EBD0;
+  --color-brand-brown: #4A3B2C;
+  --color-brand-orange: #C87A2C;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-brand-orange) var(--color-brand-cream);
+}
+
+/* Custom Webkit Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-brand-cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-orange);
+  border-radius: 10px;
+  border: 2px solid var(--color-brand-cream);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-brown);
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-brand-brown);
+  background-color: var(--color-brand-cream);
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+@media (pointer: fine) {
+  body, a, button, input, select, textarea, [role="button"], * {
+    cursor: none !important;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+}
+
+@layer utilities {
+  .clay-card {
+    box-shadow: 
+      8px 8px 16px rgba(0, 0, 0, 0.05),
+      -8px -8px 16px rgba(255, 255, 255, 0.6),
+      inset 3px 3px 8px rgba(255, 255, 255, 0.8),
+      inset -3px -3px 8px rgba(0, 0, 0, 0.03);
+  }
+  .clay-card-strong {
+    box-shadow: 
+      12px 12px 24px rgba(0, 0, 0, 0.07),
+      -12px -12px 24px rgba(255, 255, 255, 0.7),
+      inset 4px 4px 10px rgba(255, 255, 255, 0.9),
+      inset -4px -4px 10px rgba(0, 0, 0, 0.04);
+  }
+  .clay-icon {
+    box-shadow: 
+      4px 4px 8px rgba(0, 0, 0, 0.05),
+      -4px -4px 8px rgba(255, 255, 255, 0.8),
+      inset 2px 2px 4px rgba(255, 255, 255, 0.9),
+      inset -2px -2px 4px rgba(0, 0, 0, 0.03);
+  }
+  .clay-pill {
+    box-shadow: 
+      8px 8px 20px rgba(0, 0, 0, 0.08),
+      -6px -6px 16px rgba(255, 255, 255, 0.5),
+      inset 3px 3px 8px rgba(255, 255, 255, 0.9),
+      inset -3px -3px 8px rgba(0, 0, 0, 0.04);
+  }
+  .clay-btn-primary {
+    box-shadow: 
+      6px 6px 12px rgba(0, 0, 0, 0.1),
+      -6px -6px 12px rgba(255, 255, 255, 0.4),
+      inset 2px 2px 6px rgba(255, 255, 255, 0.5),
+      inset -2px -2px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+  }
+  .clay-btn-primary:active {
+    box-shadow: 
+      inset 4px 4px 8px rgba(0, 0, 0, 0.15),
+      inset -4px -4px 8px rgba(255, 255, 255, 0.4);
+    transform: scale(0.95);
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  @keyframes marquee-reverse {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
+  }
+  .animate-marquee {
+    animation: marquee 40s linear infinite;
+  }
+  .animate-marquee-reverse {
+    animation: marquee-reverse 45s linear infinite;
+  }
+  .animate-marquee:hover, .animate-marquee-reverse:hover {
+    animation-play-state: paused;
+  }
+}
