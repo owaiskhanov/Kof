@@ -11,7 +11,7 @@ const TornPaperEdge = ({ topColor, bottomColor }: { topColor: string, bottomColo
   </div>
 );
 
-const FadeIn = ({ children, delay = 0, className = "" }: { children: React.ReactNode, delay?: number, className?: string }) => (
+const FadeIn: React.FC<{ children: React.ReactNode, delay?: number, className?: string }> = ({ children, delay = 0, className = "" }) => (
   <motion.div
     initial={{ opacity: 0, y: 30 }}
     whileInView={{ opacity: 1, y: 0 }}
@@ -145,7 +145,7 @@ const UnboxingCard = () => {
         <p className="text-sm text-brand-brown/70 mb-6 flex-grow">Sweet and flavorful small-sized mangoes, beautifully packaged and perfect for everyday enjoyment.</p>
         <div className="flex flex-col sm:flex-row items-center justify-between w-full mt-auto pt-4 border-t border-black/5 gap-4 sm:gap-0">
           <span className="text-2xl font-bold text-brand-brown">₹1,200</span>
-          <a href="https://wa.me/919653614716?text=Hello!%20I%20would%20like%20to%20order%20the%20Small%20Size%20Mangoes%20(1%20Dozen)%20for%20%E2%82%B91,200." target="_blank" rel="noreferrer" className="w-full sm:w-auto bg-brand-yellow text-brand-brown px-6 py-2.5 rounded-full text-sm font-bold hover:bg-brand-orange hover:text-white clay-btn-primary text-center">
+          <a href="https://wa.me/918655115473?text=Hello!%20I%20would%20like%20to%20order%20the%20Small%20Size%20Mangoes%20(1%20Dozen)%20for%20%E2%82%B91,200." target="_blank" rel="noreferrer" className="w-full sm:w-auto bg-brand-yellow text-brand-brown px-6 py-2.5 rounded-full text-sm font-bold hover:bg-brand-orange hover:text-white clay-btn-primary text-center">
             Order Now
           </a>
         </div>
@@ -181,7 +181,7 @@ const HalfDozenBox = () => {
               <span className="font-bold text-brand-brown">King Size</span>
               <div className="flex items-center gap-4">
                 <span className="text-xl font-bold text-brand-orange">₹1,100</span>
-                <a href="https://wa.me/919653614716?text=Hello!%20I%20would%20like%20to%20order%20the%206%20Piece%20Box%20-%20King%20Size%20for%20%E2%82%B91,100." target="_blank" rel="noreferrer" className="bg-brand-yellow text-brand-brown px-5 py-2 rounded-full text-xs font-bold hover:bg-brand-orange hover:text-white clay-btn-primary transition-colors">
+                <a href="https://wa.me/918655115473?text=Hello!%20I%20would%20like%20to%20order%20the%206%20Piece%20Box%20-%20King%20Size%20for%20%E2%82%B91,100." target="_blank" rel="noreferrer" className="bg-brand-yellow text-brand-brown px-5 py-2 rounded-full text-xs font-bold hover:bg-brand-orange hover:text-white clay-btn-primary transition-colors">
                   Order
                 </a>
               </div>
@@ -191,7 +191,7 @@ const HalfDozenBox = () => {
               <span className="font-bold text-brand-brown">Medium Size</span>
               <div className="flex items-center gap-4">
                 <span className="text-xl font-bold text-brand-orange">₹800</span>
-                <a href="https://wa.me/919653614716?text=Hello!%20I%20would%20like%20to%20order%20the%206%20Piece%20Box%20-%20Medium%20Size%20for%20%E2%82%B9800." target="_blank" rel="noreferrer" className="bg-brand-yellow text-brand-brown px-5 py-2 rounded-full text-xs font-bold hover:bg-brand-orange hover:text-white clay-btn-primary transition-colors">
+                <a href="https://wa.me/918655115473?text=Hello!%20I%20would%20like%20to%20order%20the%206%20Piece%20Box%20-%20Medium%20Size%20for%20%E2%82%B9800." target="_blank" rel="noreferrer" className="bg-brand-yellow text-brand-brown px-5 py-2 rounded-full text-xs font-bold hover:bg-brand-orange hover:text-white clay-btn-primary transition-colors">
                   Order
                 </a>
               </div>
@@ -201,7 +201,7 @@ const HalfDozenBox = () => {
               <span className="font-bold text-brand-brown">Small Size</span>
               <div className="flex items-center gap-4">
                 <span className="text-xl font-bold text-brand-orange">₹650</span>
-                <a href="https://wa.me/919653614716?text=Hello!%20I%20would%20like%20to%20order%20the%206%20Piece%20Box%20-%20Small%20Size%20for%20%E2%82%B9650." target="_blank" rel="noreferrer" className="bg-brand-yellow text-brand-brown px-5 py-2 rounded-full text-xs font-bold hover:bg-brand-orange hover:text-white clay-btn-primary transition-colors">
+                <a href="https://wa.me/918655115473?text=Hello!%20I%20would%20like%20to%20order%20the%206%20Piece%20Box%20-%20Small%20Size%20for%20%E2%82%B9650." target="_blank" rel="noreferrer" className="bg-brand-yellow text-brand-brown px-5 py-2 rounded-full text-xs font-bold hover:bg-brand-orange hover:text-white clay-btn-primary transition-colors">
                   Order
                 </a>
               </div>
@@ -603,7 +603,7 @@ export default function App() {
           </nav>
           <div className="flex items-center gap-3">
             <motion.a 
-              href="https://wa.me/919653614716"
+              href="https://wa.me/918655115473"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#25D366] text-white px-4 py-2 md:px-5 md:py-2 rounded-full font-semibold hover:bg-[#20bd5a] clay-btn-primary flex items-center gap-2 text-sm md:text-base"
@@ -860,7 +860,7 @@ export default function App() {
                 <p className="text-sm text-brand-brown/70 mb-6 flex-grow">The finest, largest, and most flawless king-sized mangoes, delivering an unmatched premium experience.</p>
                 <div className="flex flex-col sm:flex-row items-center justify-between w-full mt-auto pt-4 border-t border-black/5 gap-4 sm:gap-0">
                   <span className="text-2xl font-bold text-brand-brown">₹2,000</span>
-                  <a href="https://wa.me/919653614716?text=Hello!%20I%20would%20like%20to%20order%20the%20King%20Size%20(Large)%20Mangoes%20(1%20Dozen)%20for%20%E2%82%B92,000." target="_blank" rel="noreferrer" className="w-full sm:w-auto bg-brand-yellow text-brand-brown px-6 py-2.5 rounded-full text-sm font-bold hover:bg-brand-orange hover:text-white clay-btn-primary text-center">
+                  <a href="https://wa.me/918655115473?text=Hello!%20I%20would%20like%20to%20order%20the%20King%20Size%20(Large)%20Mangoes%20(1%20Dozen)%20for%20%E2%82%B92,000." target="_blank" rel="noreferrer" className="w-full sm:w-auto bg-brand-yellow text-brand-brown px-6 py-2.5 rounded-full text-sm font-bold hover:bg-brand-orange hover:text-white clay-btn-primary text-center">
                     Order Now
                   </a>
                 </div>
@@ -884,7 +884,7 @@ export default function App() {
                 <p className="text-sm text-brand-brown/70 mb-6 flex-grow">Perfectly sized, incredibly sweet medium mangoes ideal for daily family consumption and desserts.</p>
                 <div className="flex flex-col sm:flex-row items-center justify-between w-full mt-auto pt-4 border-t border-black/5 gap-4 sm:gap-0">
                   <span className="text-2xl font-bold text-brand-brown">₹1,600</span>
-                  <a href="https://wa.me/919653614716?text=Hello!%20I%20would%20like%20to%20order%20the%20Medium%20Size%20Mangoes%20(1%20Dozen)%20for%20%E2%82%B91,600." target="_blank" rel="noreferrer" className="w-full sm:w-auto bg-brand-yellow text-brand-brown px-6 py-2.5 rounded-full text-sm font-bold hover:bg-brand-orange hover:text-white clay-btn-primary text-center">
+                  <a href="https://wa.me/918655115473?text=Hello!%20I%20would%20like%20to%20order%20the%20Medium%20Size%20Mangoes%20(1%20Dozen)%20for%20%E2%82%B91,600." target="_blank" rel="noreferrer" className="w-full sm:w-auto bg-brand-yellow text-brand-brown px-6 py-2.5 rounded-full text-sm font-bold hover:bg-brand-orange hover:text-white clay-btn-primary text-center">
                     Order Now
                   </a>
                 </div>
@@ -947,7 +947,7 @@ export default function App() {
               PURE<br/>SWEETNESS
             </h2>
             <motion.a 
-              href="https://wa.me/919653614716"
+              href="https://wa.me/918655115473"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="inline-flex items-center gap-2 bg-[#25D366] text-white px-8 py-3.5 rounded-full font-bold hover:bg-[#20bd5a] transition-colors clay-btn-primary"
