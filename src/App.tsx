@@ -190,8 +190,8 @@ const HalfDozenBox = () => {
             <div className="flex items-center justify-between p-4 bg-white/60 rounded-2xl clay-pill border border-white/40">
               <span className="font-bold text-brand-brown">Medium Size</span>
               <div className="flex items-center gap-4">
-                <span className="text-xl font-bold text-brand-orange">₹800</span>
-                <a href="https://wa.me/918655115473?text=Hello!%20I%20would%20like%20to%20order%20the%206%20Piece%20Box%20-%20Medium%20Size%20for%20%E2%82%B9800." target="_blank" rel="noreferrer" className="bg-brand-yellow text-brand-brown px-5 py-2 rounded-full text-xs font-bold hover:bg-brand-orange hover:text-white clay-btn-primary transition-colors">
+                <span className="text-xl font-bold text-brand-orange">₹700</span>
+                <a href="https://wa.me/918655115473?text=Hello!%20I%20would%20like%20to%20order%20the%206%20Piece%20Box%20-%20Medium%20Size%20for%20%E2%82%B9700." target="_blank" rel="noreferrer" className="bg-brand-yellow text-brand-brown px-5 py-2 rounded-full text-xs font-bold hover:bg-brand-orange hover:text-white clay-btn-primary transition-colors">
                   Order
                 </a>
               </div>
@@ -883,8 +883,8 @@ export default function App() {
                 <p className="text-xs text-brand-orange mb-4 uppercase tracking-wider font-bold">1 Dozen • 200+ grams per fruit</p>
                 <p className="text-sm text-brand-brown/70 mb-6 flex-grow">Perfectly sized, incredibly sweet medium mangoes ideal for daily family consumption and desserts.</p>
                 <div className="flex flex-col sm:flex-row items-center justify-between w-full mt-auto pt-4 border-t border-black/5 gap-4 sm:gap-0">
-                  <span className="text-2xl font-bold text-brand-brown">₹1,400</span>
-                  <a href="https://wa.me/918655115473?text=Hello!%20I%20would%20like%20to%20order%20the%20Medium%20Size%20Mangoes%20(1%20Dozen)%20for%20%E2%82%B91,400." target="_blank" rel="noreferrer" className="w-full sm:w-auto bg-brand-yellow text-brand-brown px-6 py-2.5 rounded-full text-sm font-bold hover:bg-brand-orange hover:text-white clay-btn-primary text-center">
+                  <span className="text-2xl font-bold text-brand-brown">₹1,300</span>
+                  <a href="https://wa.me/918655115473?text=Hello!%20I%20would%20like%20to%20order%20the%20Medium%20Size%20Mangoes%20(1%20Dozen)%20for%20%E2%82%B91,300." target="_blank" rel="noreferrer" className="w-full sm:w-auto bg-brand-yellow text-brand-brown px-6 py-2.5 rounded-full text-sm font-bold hover:bg-brand-orange hover:text-white clay-btn-primary text-center">
                     Order Now
                   </a>
                 </div>
