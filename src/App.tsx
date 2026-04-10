@@ -859,8 +859,8 @@ export default function App() {
                 <p className="text-xs text-brand-orange mb-4 uppercase tracking-wider font-bold">1 Dozen • 240+ grams per fruit</p>
                 <p className="text-sm text-brand-brown/70 mb-6 flex-grow">The finest, largest, and most flawless king-sized mangoes, delivering an unmatched premium experience.</p>
                 <div className="flex flex-col sm:flex-row items-center justify-between w-full mt-auto pt-4 border-t border-black/5 gap-4 sm:gap-0">
-                  <span className="text-2xl font-bold text-brand-brown">₹1,600</span>
-                  <a href="https://wa.me/918655115473?text=Hello!%20I%20would%20like%20to%20order%20the%20King%20Size%20(Large)%20Mangoes%20(1%20Dozen)%20for%20%E2%82%B91,600." target="_blank" rel="noreferrer" className="w-full sm:w-auto bg-brand-yellow text-brand-brown px-6 py-2.5 rounded-full text-sm font-bold hover:bg-brand-orange hover:text-white clay-btn-primary text-center">
+                  <span className="text-2xl font-bold text-brand-brown">₹1,500</span>
+                  <a href="https://wa.me/918655115473?text=Hello!%20I%20would%20like%20to%20order%20the%20King%20Size%20(Large)%20Mangoes%20(1%20Dozen)%20for%20%E2%82%B91,500." target="_blank" rel="noreferrer" className="w-full sm:w-auto bg-brand-yellow text-brand-brown px-6 py-2.5 rounded-full text-sm font-bold hover:bg-brand-orange hover:text-white clay-btn-primary text-center">
                     Order Now
                   </a>
                 </div>
