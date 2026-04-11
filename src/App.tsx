@@ -306,6 +306,52 @@ const DeliveryZones = () => {
   );
 };
 
+const LocationMap = () => {
+  return (
+    <section className="bg-brand-beige py-16 md:py-24 w-full relative z-10">
+      <div className="max-w-7xl mx-auto px-4 md:px-12">
+        <FadeIn className="text-center mb-12">
+          <div className="inline-flex items-center justify-center gap-2 mb-4 text-brand-orange">
+            <MapPin size={28} />
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-brand-brown">Visit Our Store</h2>
+          </div>
+          <p className="text-brand-brown/70 max-w-2xl mx-auto">
+            Come visit us at our Jogeshwari location to pick up your fresh, premium Ratnagiri Alphonso mangoes in person.
+          </p>
+        </FadeIn>
+        
+        <FadeIn delay={0.2}>
+          <div className="w-full h-[400px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl border-4 border-white/50 relative z-10">
+            <iframe 
+              src="https://maps.google.com/maps?q=King%20of%20Fruits%2C%20Gala%20number%2020%2C%20Arb%20Heights%2C%20Jogeshwari%20West%2C%20Mumbai&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+              width="100%" 
+              height="100%" 
+              style={{ border: 0 }} 
+              allowFullScreen 
+              loading="lazy" 
+              referrerPolicy="no-referrer-when-downgrade"
+              title="King of Fruits Jogeshwari Location"
+            ></iframe>
+          </div>
+          <div className="flex justify-center mt-8">
+            <motion.a 
+              href="https://www.google.com/maps/dir/19.1410408,72.8397314/King+of+Fruits,+Gala+number+20,+Arb+Heights,+Hill+Park,+Road,+off+Swami+Vivekanand+Road,+Shastri+Nagar,+Jogeshwari+West,+Mumbai,+Maharashtra+400102,+India/@19.1383793,72.8419841,15z/data=!3m1!4b1!4m19!1m8!3m7!1s0x3be7b741063d2105:0xdb60bf2c84f4d8ec!2sKing+of+Fruits!8m2!3d19.1383793!4d72.8419841!15sChlLaW5nIG9mIGZydWl0cyBqb2dlc2h3YXJpkgERZnJ1aXRzX3dob2xlc2FsZXLgAQA!16s%2Fg%2F11z42dd381!4m9!1m1!4e1!1m5!1m1!1s0x3be7b741063d2105:0xdb60bf2c84f4d8ec!2m2!1d72.8419841!2d19.1383793!3e9?hl=en-US&entry=ttu&g_ep=EgoyMDI2MDQwOC4wIKXMDSoASAFQAw%3D%3D" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-brand-orange text-white px-8 py-4 rounded-full font-bold clay-btn hover:bg-brand-brown transition-colors"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <MapPin size={20} />
+              Get Directions
+            </motion.a>
+          </div>
+        </FadeIn>
+      </div>
+    </section>
+  );
+};
+
 const InstagramFeed = () => {
   const posts = [
     { id: 1, video: "https://zpojmqmlenivqxqcsuwc.supabase.co/storage/v1/object/public/Stalite%20Media/KOF/Video.mp4", likes: 342, comments: 28 },
@@ -1026,6 +1072,9 @@ export default function App() {
           </div>
         </div>
       </section>
+
+      {/* Location Map Section */}
+      <LocationMap />
 
       {/* Instagram Feed Section */}
       <InstagramFeed />
