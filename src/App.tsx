@@ -144,69 +144,10 @@ const UnboxingCard = () => {
         <p className="text-xs text-brand-orange mb-4 uppercase tracking-wider font-bold">1 Dozen • 160+ grams per fruit</p>
         <p className="text-sm text-brand-brown/70 mb-6 flex-grow">Sweet and flavorful small-sized mangoes, beautifully packaged and perfect for everyday enjoyment.</p>
         <div className="flex flex-col sm:flex-row items-center justify-between w-full mt-auto pt-4 border-t border-black/5 gap-4 sm:gap-0">
-          <span className="text-2xl font-bold text-brand-brown">₹750</span>
-          <a href="https://wa.me/918655115473?text=Hello!%20I%20would%20like%20to%20order%20the%20Small%20Size%20Mangoes%20(1%20Dozen)%20for%20%E2%82%B9750." target="_blank" rel="noreferrer" className="w-full sm:w-auto bg-brand-yellow text-brand-brown px-6 py-2.5 rounded-full text-sm font-bold hover:bg-brand-orange hover:text-white clay-btn-primary text-center">
+          <span className="text-2xl font-bold text-brand-brown">₹650</span>
+          <a href="https://wa.me/918655115473?text=Hello!%20I%20would%20like%20to%20order%20the%20Small%20Size%20Mangoes%20(1%20Dozen)%20for%20%E2%82%B9650." target="_blank" rel="noreferrer" className="w-full sm:w-auto bg-brand-yellow text-brand-brown px-6 py-2.5 rounded-full text-sm font-bold hover:bg-brand-orange hover:text-white clay-btn-primary text-center">
             Order Now
           </a>
-        </div>
-      </div>
-    </FadeIn>
-  );
-};
-
-const HalfDozenBox = () => {
-  return (
-    <FadeIn delay={0.4} className="mt-12 md:mt-16">
-      <div className="bg-[#FAF4E1] rounded-[2rem] md:rounded-[2.5rem] p-6 md:p-12 flex flex-col md:flex-row items-center gap-8 md:gap-16 clay-card-strong relative overflow-hidden">
-        <div className="w-full md:w-1/2 flex justify-center relative z-10">
-          <motion.img 
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.4 }}
-            src="https://zpojmqmlenivqxqcsuwc.supabase.co/storage/v1/object/public/Stalite%20Media/Website%20Cards/Mango-Box-6.png" 
-            alt="6 Piece Box (Half Dozen)" 
-            className="w-full max-w-md object-contain drop-shadow-2xl" 
-            loading="lazy"
-          />
-        </div>
-        <div className="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left relative z-10">
-          <h3 className="text-3xl md:text-4xl font-serif font-bold mb-2 text-brand-brown">
-            6 Piece Box <span className="text-brand-orange text-2xl md:text-3xl block sm:inline">(Half Dozen)</span>
-          </h3>
-          <p className="text-sm md:text-base text-brand-brown/70 mb-8 max-w-md">
-            Perfect for gifting or smaller families. Get the same premium quality in a compact, beautifully designed box.
-          </p>
-          
-          <div className="w-full space-y-4 max-w-md">
-            <div className="flex items-center justify-between p-4 bg-white/60 rounded-2xl clay-pill border border-white/40">
-              <span className="font-bold text-brand-brown">King Size</span>
-              <div className="flex items-center gap-4">
-                <span className="text-xl font-bold text-brand-orange">₹800</span>
-                <a href="https://wa.me/918655115473?text=Hello!%20I%20would%20like%20to%20order%20the%206%20Piece%20Box%20-%20King%20Size%20for%20%E2%82%B9800." target="_blank" rel="noreferrer" className="bg-brand-yellow text-brand-brown px-5 py-2 rounded-full text-xs font-bold hover:bg-brand-orange hover:text-white clay-btn-primary transition-colors">
-                  Order
-                </a>
-              </div>
-            </div>
-            
-            <div className="flex items-center justify-between p-4 bg-white/60 rounded-2xl clay-pill border border-white/40">
-              <span className="font-bold text-brand-brown">Medium Size</span>
-              <div className="flex items-center gap-4">
-                <span className="text-xl font-bold text-brand-orange">₹600</span>
-                <a href="https://wa.me/918655115473?text=Hello!%20I%20would%20like%20to%20order%20the%206%20Piece%20Box%20-%20Medium%20Size%20for%20%E2%82%B9600." target="_blank" rel="noreferrer" className="bg-brand-yellow text-brand-brown px-5 py-2 rounded-full text-xs font-bold hover:bg-brand-orange hover:text-white clay-btn-primary transition-colors">
-                  Order
-                </a>
-              </div>
-            </div>
-            
-            <div className="flex items-center justify-between p-4 bg-white/60 rounded-2xl clay-pill border border-white/40">
-              <span className="font-bold text-brand-brown">Small Size</span>
-              <div className="flex items-center gap-4">
-                <span className="text-xl font-bold text-brand-orange">₹400</span>
-                <a href="https://wa.me/918655115473?text=Hello!%20I%20would%20like%20to%20order%20the%206%20Piece%20Box%20-%20Small%20Size%20for%20%E2%82%B9400." target="_blank" rel="noreferrer" className="bg-brand-yellow text-brand-brown px-5 py-2 rounded-full text-xs font-bold hover:bg-brand-orange hover:text-white clay-btn-primary transition-colors">
-                  Order
-                </a>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </FadeIn>
@@ -905,8 +846,8 @@ export default function App() {
                 <p className="text-xs text-brand-orange mb-4 uppercase tracking-wider font-bold">1 Dozen • 240+ grams per fruit</p>
                 <p className="text-sm text-brand-brown/70 mb-6 flex-grow">The finest, largest, and most flawless king-sized mangoes, delivering an unmatched premium experience.</p>
                 <div className="flex flex-col sm:flex-row items-center justify-between w-full mt-auto pt-4 border-t border-black/5 gap-4 sm:gap-0">
-                  <span className="text-2xl font-bold text-brand-brown">₹1,450</span>
-                  <a href="https://wa.me/918655115473?text=Hello!%20I%20would%20like%20to%20order%20the%20King%20Size%20(Large)%20Mangoes%20(1%20Dozen)%20for%20%E2%82%B91,450." target="_blank" rel="noreferrer" className="w-full sm:w-auto bg-brand-yellow text-brand-brown px-6 py-2.5 rounded-full text-sm font-bold hover:bg-brand-orange hover:text-white clay-btn-primary text-center">
+                  <span className="text-2xl font-bold text-brand-brown">₹1,400</span>
+                  <a href="https://wa.me/918655115473?text=Hello!%20I%20would%20like%20to%20order%20the%20King%20Size%20(Large)%20Mangoes%20(1%20Dozen)%20for%20%E2%82%B91,400." target="_blank" rel="noreferrer" className="w-full sm:w-auto bg-brand-yellow text-brand-brown px-6 py-2.5 rounded-full text-sm font-bold hover:bg-brand-orange hover:text-white clay-btn-primary text-center">
                     Order Now
                   </a>
                 </div>
@@ -929,8 +870,8 @@ export default function App() {
                 <p className="text-xs text-brand-orange mb-4 uppercase tracking-wider font-bold">1 Dozen • 200+ grams per fruit</p>
                 <p className="text-sm text-brand-brown/70 mb-6 flex-grow">Perfectly sized, incredibly sweet medium mangoes ideal for daily family consumption and desserts.</p>
                 <div className="flex flex-col sm:flex-row items-center justify-between w-full mt-auto pt-4 border-t border-black/5 gap-4 sm:gap-0">
-                  <span className="text-2xl font-bold text-brand-brown">₹1,100</span>
-                  <a href="https://wa.me/918655115473?text=Hello!%20I%20would%20like%20to%20order%20the%20Medium%20Size%20Mangoes%20(1%20Dozen)%20for%20%E2%82%B91,100." target="_blank" rel="noreferrer" className="w-full sm:w-auto bg-brand-yellow text-brand-brown px-6 py-2.5 rounded-full text-sm font-bold hover:bg-brand-orange hover:text-white clay-btn-primary text-center">
+                  <span className="text-2xl font-bold text-brand-brown">₹1,000</span>
+                  <a href="https://wa.me/918655115473?text=Hello!%20I%20would%20like%20to%20order%20the%20Medium%20Size%20Mangoes%20(1%20Dozen)%20for%20%E2%82%B91,000." target="_blank" rel="noreferrer" className="w-full sm:w-auto bg-brand-yellow text-brand-brown px-6 py-2.5 rounded-full text-sm font-bold hover:bg-brand-orange hover:text-white clay-btn-primary text-center">
                     Order Now
                   </a>
                 </div>
@@ -940,9 +881,6 @@ export default function App() {
             {/* Card 3 */}
             <UnboxingCard />
           </div>
-
-          {/* Half Dozen Box Section */}
-          <HalfDozenBox />
         </div>
       </section>
 
