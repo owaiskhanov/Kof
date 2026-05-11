@@ -522,8 +522,98 @@ const StoryBubble = () => {
   );
 };
 
+const SplashScreen = ({ onComplete }: { onComplete: () => void }) => {
+  const [stage, setStage] = useState<'video' | 'text' | 'fading'>('video');
+
+  // Fallback in case video fails to load or play
+  useEffect(() => {
+    if (stage === 'video') {
+      const timer = setTimeout(() => {
+        setStage('text');
+      }, 30000); // 30 second ultimate fallback
+      return () => clearTimeout(timer);
+    }
+  }, [stage]);
+
+  useEffect(() => {
+    if (stage === 'text') {
+      const timer = setTimeout(() => {
+        setStage('fading');
+        setTimeout(onComplete, 800);
+      }, 3500); // Show text for 3.5 seconds
+      return () => clearTimeout(timer);
+    }
+  }, [stage, onComplete]);
+
+  return (
+    <AnimatePresence>
+      {stage !== 'fading' && (
+        <motion.div
+          initial={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.8 }}
+          className="fixed inset-0 z-[99999] bg-brand-cream flex flex-col items-center justify-center overflow-hidden"
+        >
+          <AnimatePresence mode="wait">
+            {stage === 'video' ? (
+              <motion.div
+                key="video"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.6 }}
+                className="w-full h-full flex items-center justify-center relative bg-black md:bg-brand-cream md:p-12"
+              >
+                <video
+                  src="https://sblbbrvhsyrryfoxiqna.supabase.co/storage/v1/object/public/The%20Date%20Farm/Mango%20Into.mp4"
+                  autoPlay
+                  muted
+                  playsInline
+                  onEnded={() => setStage('text')}
+                  className="w-full h-full object-cover md:object-contain drop-shadow-2xl md:rounded-3xl max-w-7xl"
+                />
+              </motion.div>
+            ) : (
+              <motion.div
+                key="text"
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.8 }}
+                className="flex flex-col items-center justify-center text-center px-6"
+              >
+                <h1 className="text-6xl md:text-8xl lg:text-[9rem] font-[var(--font-cursive)] font-bold text-brand-orange mb-6 drop-shadow-xl" style={{ fontFamily: 'var(--font-cursive)' }}>
+                  King of Fruits
+                </h1>
+                <p className="text-lg md:text-2xl font-sans uppercase font-black tracking-[0.3em] text-brand-brown flex items-center justify-center w-full">
+                  The sweetest mangoes in town
+                </p>
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </motion.div>
+      )}
+    </AnimatePresence>
+  );
+};
+
 export default function App() {
   const [isReplacementModalOpen, setIsReplacementModalOpen] = useState(false);
+  const [showSplash, setShowSplash] = useState(true);
+
+  useEffect(() => {
+    // Show splash screen every time for development/preview purposes
+    // We comment out the sessionStorage check so the user can see it on reload
+    // const hasSeenSplash = sessionStorage.getItem('hasSeenSplash');
+    // if (hasSeenSplash) {
+    //   setShowSplash(false);
+    // }
+  }, []);
+
+  const handleSplashComplete = () => {
+    // sessionStorage.setItem('hasSeenSplash', 'true');
+    setShowSplash(false);
+  };
 
   useEffect(() => {
     const handleContextMenu = (e: MouseEvent) => e.preventDefault();
@@ -532,7 +622,9 @@ export default function App() {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col font-sans bg-brand-cream selection:bg-brand-orange selection:text-white">
+    <>
+      {showSplash && <SplashScreen onComplete={handleSplashComplete} />}
+      <div className={`min-h-screen flex flex-col font-sans bg-brand-cream selection:bg-brand-orange selection:text-white ${showSplash ? 'h-screen overflow-hidden' : ''}`}>
       <ReplacementModal isOpen={isReplacementModalOpen} onClose={() => setIsReplacementModalOpen(false)} />
       <CustomCursor />
       <StoryBubble />
@@ -1065,5 +1157,6 @@ export default function App() {
         <span className="text-xs font-semibold tracking-wide text-white/90">Our Guarantee</span>
       </motion.button>
     </div>
+    </>
   );
 }
