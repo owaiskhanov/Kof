@@ -572,6 +572,12 @@ const SplashScreen = ({ onComplete }: { onComplete: () => void }) => {
                   onEnded={() => setStage('text')}
                   className="w-full h-full object-cover md:object-contain drop-shadow-2xl md:rounded-3xl max-w-7xl"
                 />
+                <button 
+                  onClick={() => setStage('text')}
+                  className="absolute bottom-8 md:bottom-16 text-white/40 md:text-black/30 hover:text-white md:hover:text-black/60 text-[10px] md:text-xs uppercase tracking-[0.2em] transition-colors font-medium z-10"
+                >
+                  Skip
+                </button>
               </motion.div>
             ) : (
               <motion.div
