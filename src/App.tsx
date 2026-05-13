@@ -545,6 +545,22 @@ const SplashScreen = ({ onComplete }: { onComplete: () => void }) => {
     }
   }, [stage, onComplete]);
 
+  // Handle Escape key to skip video or text
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        if (stage === 'video') setStage('text');
+        else if (stage === 'text') {
+          setStage('fading');
+          setTimeout(onComplete, 800);
+        }
+      }
+    };
+    
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [stage, onComplete]);
+
   return (
     <AnimatePresence>
       {stage !== 'fading' && (
