@@ -144,8 +144,8 @@ const UnboxingCard = () => {
         <p className="text-xs text-brand-orange mb-4 uppercase tracking-wider font-bold">1 Dozen • 160+ grams per fruit</p>
         <p className="text-sm text-brand-brown/70 mb-6 flex-grow">Sweet and flavorful small-sized mangoes, beautifully packaged and perfect for everyday enjoyment.</p>
         <div className="flex flex-col sm:flex-row items-center justify-between w-full mt-auto pt-4 border-t border-black/5 gap-4 sm:gap-0">
-          <span className="text-2xl font-bold text-brand-brown">₹500</span>
-          <a href="https://wa.me/918655115473?text=Hello!%20I%20would%20like%20to%20order%20the%20Small%20Size%20Mangoes%20(1%20Dozen)%20for%20%E2%82%B9500." target="_blank" rel="noreferrer" className="w-full sm:w-auto bg-brand-yellow text-brand-brown px-6 py-2.5 rounded-full text-sm font-bold hover:bg-brand-orange hover:text-white clay-btn-primary text-center">
+          <span className="text-2xl font-bold text-brand-brown">₹400</span>
+          <a href="https://wa.me/918655115473?text=Hello!%20I%20would%20like%20to%20order%20the%20Small%20Size%20Mangoes%20(1%20Dozen)%20for%20%E2%82%B9400." target="_blank" rel="noreferrer" className="w-full sm:w-auto bg-brand-yellow text-brand-brown px-6 py-2.5 rounded-full text-sm font-bold hover:bg-brand-orange hover:text-white clay-btn-primary text-center">
             Order Now
           </a>
         </div>
@@ -961,8 +961,8 @@ export default function App() {
                 <p className="text-xs text-brand-orange mb-4 uppercase tracking-wider font-bold">1 Dozen • 240+ grams per fruit</p>
                 <p className="text-sm text-brand-brown/70 mb-6 flex-grow">The finest, largest, and most flawless king-sized mangoes, delivering an unmatched premium experience.</p>
                 <div className="flex flex-col sm:flex-row items-center justify-between w-full mt-auto pt-4 border-t border-black/5 gap-4 sm:gap-0">
-                  <span className="text-2xl font-bold text-brand-brown">₹1,200</span>
-                  <a href="https://wa.me/918655115473?text=Hello!%20I%20would%20like%20to%20order%20the%20King%20Size%20(Large)%20Mangoes%20(1%20Dozen)%20for%20%E2%82%B91,200." target="_blank" rel="noreferrer" className="w-full sm:w-auto bg-brand-yellow text-brand-brown px-6 py-2.5 rounded-full text-sm font-bold hover:bg-brand-orange hover:text-white clay-btn-primary text-center">
+                  <span className="text-2xl font-bold text-brand-brown">₹900</span>
+                  <a href="https://wa.me/918655115473?text=Hello!%20I%20would%20like%20to%20order%20the%20King%20Size%20(Large)%20Mangoes%20(1%20Dozen)%20for%20%E2%82%B9900." target="_blank" rel="noreferrer" className="w-full sm:w-auto bg-brand-yellow text-brand-brown px-6 py-2.5 rounded-full text-sm font-bold hover:bg-brand-orange hover:text-white clay-btn-primary text-center">
                     Order Now
                   </a>
                 </div>
@@ -985,8 +985,8 @@ export default function App() {
                 <p className="text-xs text-brand-orange mb-4 uppercase tracking-wider font-bold">1 Dozen • 200+ grams per fruit</p>
                 <p className="text-sm text-brand-brown/70 mb-6 flex-grow">Perfectly sized, incredibly sweet medium mangoes ideal for daily family consumption and desserts.</p>
                 <div className="flex flex-col sm:flex-row items-center justify-between w-full mt-auto pt-4 border-t border-black/5 gap-4 sm:gap-0">
-                  <span className="text-2xl font-bold text-brand-brown">₹700</span>
-                  <a href="https://wa.me/918655115473?text=Hello!%20I%20would%20like%20to%20order%20the%20Medium%20Size%20Mangoes%20(1%20Dozen)%20for%20%E2%82%B9700." target="_blank" rel="noreferrer" className="w-full sm:w-auto bg-brand-yellow text-brand-brown px-6 py-2.5 rounded-full text-sm font-bold hover:bg-brand-orange hover:text-white clay-btn-primary text-center">
+                  <span className="text-2xl font-bold text-brand-brown">₹600</span>
+                  <a href="https://wa.me/918655115473?text=Hello!%20I%20would%20like%20to%20order%20the%20Medium%20Size%20Mangoes%20(1%20Dozen)%20for%20%E2%82%B9600." target="_blank" rel="noreferrer" className="w-full sm:w-auto bg-brand-yellow text-brand-brown px-6 py-2.5 rounded-full text-sm font-bold hover:bg-brand-orange hover:text-white clay-btn-primary text-center">
                     Order Now
                   </a>
                 </div>
