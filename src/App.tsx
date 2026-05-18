@@ -540,7 +540,7 @@ const SplashScreen = ({ onComplete }: { onComplete: () => void }) => {
       const timer = setTimeout(() => {
         setStage('fading');
         setTimeout(onComplete, 800);
-      }, 3500); // Show text for 3.5 seconds
+      }, 1000); // Show text for 1 second
       return () => clearTimeout(timer);
     }
   }, [stage, onComplete]);
@@ -581,6 +581,7 @@ const SplashScreen = ({ onComplete }: { onComplete: () => void }) => {
                 className="w-full h-full flex items-center justify-center relative bg-black md:bg-brand-cream md:p-12"
               >
                 <video
+                  ref={(el) => { if (el) el.playbackRate = 2; }}
                   src="https://sblbbrvhsyrryfoxiqna.supabase.co/storage/v1/object/public/The%20Date%20Farm/Mango%20Into.mp4"
                   autoPlay
                   muted
